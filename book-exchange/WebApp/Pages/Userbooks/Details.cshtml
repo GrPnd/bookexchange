@@ -1,0 +1,55 @@
+@page
+@model WebApp.Pages.Userbooks.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>UserBook</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserBook.Review)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserBook.Review)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserBook.Rating)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserBook.Rating)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserBook.IsOwner)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserBook.IsOwner)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserBook.WantTrade)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserBook.WantTrade)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserBook.User)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserBook.User!.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserBook.Book)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserBook.Book!.Description)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.UserBook.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

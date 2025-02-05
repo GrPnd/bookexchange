@@ -1,0 +1,32 @@
+@page
+@model WebApp.Pages.MyBooks.TradeDetails
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trade Details</title>
+</head>
+<body>
+@if (Model.Trade != null && Model.Trade.BookA != null && Model.Trade.BookB != null)
+{
+<div>
+    <p>
+        Do you want to trade
+        <strong>@Model.Trade.BookA.Book!.Title</strong>
+        for
+        <strong>@Model.Trade.BookB.Book!.Title</strong>?
+    </p>
+    <form method="post">
+        <button type="submit" name="action" value="accept" class="btn btn-success">Accept</button>
+        <button type="submit" name="action" value="reject" class="btn btn-danger">Reject</button>
+    </form>
+</div>
+}
+else
+{
+<div>
+    <p>No trade information available for this book.</p>
+</div>
+}
+</body>
+</html>

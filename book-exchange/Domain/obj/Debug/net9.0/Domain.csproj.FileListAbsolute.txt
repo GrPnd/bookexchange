@@ -1,0 +1,12 @@
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/bin/Debug/net9.0/Domain.deps.json
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/bin/Debug/net9.0/Domain.dll
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/bin/Debug/net9.0/Domain.pdb
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/obj/Debug/net9.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/obj/Debug/net9.0/Domain.AssemblyInfoInputs.cache
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/obj/Debug/net9.0/Domain.AssemblyInfo.cs
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/obj/Debug/net9.0/Domain.csproj.CoreCompileInputs.cache
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/obj/Debug/net9.0/Domain.sourcelink.json
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/obj/Debug/net9.0/Domain.dll
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/obj/Debug/net9.0/refint/Domain.dll
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/obj/Debug/net9.0/Domain.pdb
+/Users/gregor/RiderProjects/bookexchange/book-exchange/Domain/obj/Debug/net9.0/ref/Domain.dll

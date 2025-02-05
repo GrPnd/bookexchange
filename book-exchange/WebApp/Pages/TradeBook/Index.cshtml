@@ -1,0 +1,50 @@
+@page
+@model WebApp.Pages.TradeBook.IndexModel
+
+@{
+ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BookList[0].Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookList[0].AuthorFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookList[0].AuthorLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookList[0].Description)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.BookList) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuthorFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuthorLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            <a asp-page="./SelectUserBook" asp-route-UserName="@Model.Username" asp-route-BookIdToTrade="@item.Id">Trade</a>
+        </td>
+    </tr>
+    }
+    </tbody>
+</table>

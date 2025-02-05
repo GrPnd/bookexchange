@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Search the book:</h1>
+    <form method="post">
+        <input type="text" name="search"/>
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+
+<div class="text-center">
+    @foreach (var book in Model.Books)
+    {
+        <div>
+            "@book.Title" - @book.AuthorFirstName @book.AuthorLastName (
+            @string.Join(", ", book.BookGenres!.Select(i => i.Genre!.Name).ToList())
+            ) (@book.Description)
+
+        </div>
+    }
+</div>

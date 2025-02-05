@@ -1,0 +1,16 @@
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/bin/Debug/net9.0/DAL.deps.json
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/bin/Debug/net9.0/DAL.dll
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/bin/Debug/net9.0/DAL.pdb
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/bin/Debug/net9.0/Domain.dll
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/bin/Debug/net9.0/Domain.pdb
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/obj/Debug/net9.0/DAL.csproj.AssemblyReference.cache
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/obj/Debug/net9.0/DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/obj/Debug/net9.0/DAL.AssemblyInfoInputs.cache
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/obj/Debug/net9.0/DAL.AssemblyInfo.cs
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/obj/Debug/net9.0/DAL.csproj.CoreCompileInputs.cache
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/obj/Debug/net9.0/DAL.sourcelink.json
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/obj/Debug/net9.0/DAL.csproj.Up2Date
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/obj/Debug/net9.0/DAL.dll
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/obj/Debug/net9.0/refint/DAL.dll
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/obj/Debug/net9.0/DAL.pdb
+/Users/gregor/RiderProjects/bookexchange/book-exchange/DAL/obj/Debug/net9.0/ref/DAL.dll

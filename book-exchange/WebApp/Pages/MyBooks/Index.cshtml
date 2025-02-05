@@ -1,0 +1,79 @@
+@page
+@using Domain
+@model WebApp.Pages.MyBooks.IndexModel
+
+@{
+ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].User)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].Book)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].Book!.AuthorFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].Book!.AuthorLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].Review)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].Rating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].IsOwner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].WantTrade)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.UserBook) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.User!.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Book!.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Book!.AuthorFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Book!.AuthorLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Review)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rating)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsOwner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WantTrade)
+        </td>
+        <td>
+            <a asp-page="./AddReview" asp-route-UserName="@item.User!.UserName" asp-route-BookId="@item.BookId">Add review</a>
+            <a asp-page="./GiveRating" asp-route-UserName="@item.User!.UserName" asp-route-BookId="@item.BookId">Give rating</a>
+            @if (Model.BookBIds.Contains(item.BookId) && Model.TradeStatus == ETradeStatus.Requested)
+            {
+            <a asp-page="./TradeDetails" asp-route-UserName="@item.User!.UserName" asp-route-BookId="@item.BookId">View Trade</a>
+            }
+        </td>
+    </tr>
+    }
+    </tbody>
+</table>

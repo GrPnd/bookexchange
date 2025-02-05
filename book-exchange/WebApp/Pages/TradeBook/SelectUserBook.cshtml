@@ -1,0 +1,51 @@
+@page
+@model WebApp.Pages.TradeBook.SelectUserBook
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].User)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].Book)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].Book!.AuthorFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserBook[0].Book!.AuthorLastName)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.UserBook)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.User!.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book!.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book!.AuthorFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book!.AuthorLastName)
+            </td>
+
+            <form method="post">
+                <input type="hidden" name="BookIdExchange" value="@item.BookId"/>
+                <button type="submit" value="">Exchange</button>
+            </form>
+
+        </tr>
+    }
+    </tbody>
+</table>
